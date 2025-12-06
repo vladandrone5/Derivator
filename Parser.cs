@@ -5,7 +5,13 @@ public class Parser {
 
         int index = 0;
 
-        return ParseRecursive(newInput, ref index);
+        List<object> result = ParseRecursive(newInput, ref index);
+
+        if(result.Count == 1 && result[0] is List<object>) {
+            return (List<object>) result[0];
+        }
+
+        return result;
     }
 
     private static List<object> ParseRecursive(string input, ref int index) {
@@ -34,13 +40,15 @@ public class Parser {
             else {
                 int start = index;
 
-                while(index < input.Length && input[index] == ' ' && input[index] != ',' && input[index] != ']') {
+                while(index < input.Length && input[index] != ' ' && input[index] != ',' && input[index] != ']') {
                     index++;
                 }
-                
+
                 int len = index - start;
-                string word = input.Substring(start, len);
+                string word = input.Substring(start, len).Trim('\'', '"');
+                
                 currentList.Add(word);
+                
             }
 
         }

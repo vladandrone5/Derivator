@@ -12,3 +12,4 @@
 /Users/dilaraandrone/Documents/probleme_vlad/Projects/Derivator/obj/Debug/net9.0/Derivator.pdb
 /Users/dilaraandrone/Documents/probleme_vlad/Projects/Derivator/obj/Debug/net9.0/Derivator.genruntimeconfig.cache
 /Users/dilaraandrone/Documents/probleme_vlad/Projects/Derivator/obj/Debug/net9.0/ref/Derivator.dll
+/Users/dilaraandrone/Documents/probleme_vlad/Projects/Derivator/obj/Debug/net9.0/Derivator.sourcelink.json
