@@ -5,11 +5,11 @@ public class Differentiator {
         if(expression.Count == 1) {
             string token = expression[0].ToString();
             if(token == variable) {
-                return new List<object> {"1"};
+                return new List<object> {"1"}; // singura variabila e x
             }
 
             else {
-                return new List<object> {"0"};
+                return new List<object> {"0"}; // avem doar o constanta
             }
 
         }

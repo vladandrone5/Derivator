@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Derivator")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb1551c2229f07eb9a65fd252c2af7ad8cff2e4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96690d2859263cc76c79432b9e7db7e66d885c91")]
 [assembly: System.Reflection.AssemblyProductAttribute("Derivator")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Derivator")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
