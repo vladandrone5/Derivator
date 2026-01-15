@@ -19,3 +19,13 @@ A simple symbolic differentiator that transforms the input (given as a "prefix" 
 1. for input_string = `['+', 'x', '5']` and var = `x` -> output = `['+', '1', '0']`
 2. for input_string = `['^', 'x', '2']` and var = `x` -> output = `['*', '1', ['*', '2', ['^', 'x', 1]]]`
 3. for input_string = `['sin', ['^', 'x', '2']]` and var = `x` -> output = `['*', ['cos', ['^', 'x', '2']], ['*', '1', ['*', '2', ['^', 'x', 1]]]]`
+
+
+
+<details>
+<summary>Example of hidden section</summary>
+
+- abc def 
+- deefkdhfkas
+
+</details>

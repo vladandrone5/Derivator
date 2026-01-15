@@ -3,7 +3,7 @@
 
 class Program {
 
-    static void PrintTree(List<object> node) {
+    static void PrintExpression(List<object> node) {
         
         Console.Write("[");
 
@@ -19,7 +19,9 @@ class Program {
                     Console.Write($"'{token}'");
                 }
                 else {
-                    PrintTree(subList);
+                    PrintExpression(subList);
+        
+        
                 }
             }
             else {
@@ -46,6 +48,6 @@ class Program {
         List<object> derivative = Differentiator.Derive(expression, variable);
 
         Console.WriteLine("The result is:");
-        PrintTree(derivative);
+        PrintExpression(derivative);
     }
 }

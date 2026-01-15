@@ -21,11 +21,11 @@ public class Differentiator {
                     var firstOperand = expression[1];
                     List<object> uList;
 
-                    if(firstOperand is List<object> subList) {
+                    if(firstOperand is List<object> subList) { // e sublista
                         uList = subList;
                     }
                     else {
-                        uList = new List<object> { firstOperand };
+                        uList = new List<object> {firstOperand};
                     }
 
                     List<object> derivedU = Derive(uList, variable);
@@ -251,7 +251,7 @@ public class Differentiator {
 
                     return res;
                 }
-                case "^": {
+                case "^": { // implementat doar pt exponent numar
                     
                     var u = expression[1];
                     string v = (string)expression[2];
@@ -279,6 +279,7 @@ public class Differentiator {
 
                         return res;
                     }
+                    
                     return null;
                     
                 }
