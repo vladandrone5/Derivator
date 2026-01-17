@@ -283,6 +283,26 @@ public class Differentiator {
                     return null;
                     
                 }
+                case "sqrt": {
+                    var u = expression[1];
+
+                    List<object> uList;
+
+                    if(u is List<object> subList) {
+                        uList = subList;
+                    }
+                    else {
+                        uList = new List<object> {u};
+                    }
+
+                    List<object> derivedU = Derive(uList, variable);
+
+                    List<object> sqrtExp = new List<object> {"sqrt", uList};
+                    List<object> numitor = new List<object> {"*", "2", sqrtExp};
+                    List<object> fraction = new List<object> {"/", derivedU, numitor};
+
+                    return fraction; 
+                }
                 
             } 
             return null;

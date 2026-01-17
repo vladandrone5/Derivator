@@ -12,7 +12,10 @@ A simple symbolic differentiator that transforms the input (given as a "prefix" 
 * The input is given as a string in the form of `['op', operand1, operand2]`, where operand can be a string or a new prefix expression
 * Then, the Parser.cs processes the input string into a `List<object>` object.
 * The Differentiator.cs computes the derivative of the expression, and its components (in case there are other expressions inside)
-* The result is printed by `PrintTree` function that "reconstructs" the result list into a string that is also a prefix expression.
+* The result is printed by `PrintTree` function that "reconstructs" the result list into a string that is also a prefix expression. 
+ 
+* Last update: can handle `sqrt`
+
 
 ### Examples of testing:
 
